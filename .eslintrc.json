@@ -24,6 +24,9 @@
       {
         "extensions": [".jsx", ".js"]
       }
-    ]
+    ],
+    "react/state-in-constructor": "off",
+    "react/destructuring-assignment": "off",
+    "no-underscore-dangle": "off"
   }
 }
