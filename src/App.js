@@ -1,16 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Main from './pages/Main';
-import Post from './pages/Post';
+import Routes from './Routes';
+import GlobalStyled from './styles/global';
 
 const App = () => (
-  <BrowserRouter>
-    <Switch>
-      <Route path="/" exact component={Main} />
-      <Route path="/posts/:id" component={Post} />
-    </Switch>
-  </BrowserRouter>
+  <>
+    <GlobalStyled />
+    <Routes />
+  </>
 );
 
 export default App;
