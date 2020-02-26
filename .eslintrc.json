@@ -27,6 +27,7 @@
     ],
     "react/state-in-constructor": "off",
     "react/destructuring-assignment": "off",
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "import/prefer-default-export": "off"
   }
 }

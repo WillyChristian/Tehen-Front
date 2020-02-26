@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
   body {
-    background-color: #fff;
+    background-color: #0d0d0d;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     font-family: 'Ubuntu', sans-serif !important;
