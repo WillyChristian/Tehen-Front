@@ -6,7 +6,6 @@ import api from '../../services/api';
 export default class Card extends Component {
   state = {
     posts: [],
-    postInfo: {},
     page: 1,
     totalPages: {},
   };
@@ -18,9 +17,9 @@ export default class Card extends Component {
   loadPosts = async (page = 1) => {
     const response = await api.get(`/posts?page=${page}`);
 
-    const { docs, postInfo, totalPages } = response.data;
+    const { docs, totalPages } = response.data;
 
-    this.setState({ posts: docs, postInfo, page, totalPages });
+    this.setState({ posts: docs, page, totalPages });
   };
 
   prevPage = () => {
@@ -44,7 +43,7 @@ export default class Card extends Component {
   };
 
   render() {
-    const { posts } = this.state;
+    const { posts, page, totalPages } = this.state;
 
     return (
       <Container>
@@ -56,10 +55,14 @@ export default class Card extends Component {
           ))}
         </Section>
         <div>
-          <button type="button" onClick={this.prevPage}>
+          <button type="button" disabled={page === 1} onClick={this.prevPage}>
             Anterior
           </button>
-          <button type="button" onClick={this.nextPage}>
+          <button
+            type="button"
+            disabled={page === totalPages}
+            onClick={this.nextPage}
+          >
             Proximo
           </button>
         </div>
