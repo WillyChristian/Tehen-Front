@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
-import { Container, Section, PostCard } from './styles';
+import {
+  Container,
+  Section,
+  PostCard,
+  ContainerButton,
+  PrevButton,
+  NextButton,
+} from './styles';
 
 import api from '../../services/api';
 
@@ -54,18 +61,22 @@ export default class Card extends Component {
             </PostCard>
           ))}
         </Section>
-        <div>
-          <button type="button" disabled={page === 1} onClick={this.prevPage}>
+        <ContainerButton>
+          <PrevButton
+            type="button"
+            disabled={page === 1}
+            onClick={this.prevPage}
+          >
             Anterior
-          </button>
-          <button
+          </PrevButton>
+          <NextButton
             type="button"
             disabled={page === totalPages}
             onClick={this.nextPage}
           >
             Proximo
-          </button>
-        </div>
+          </NextButton>
+        </ContainerButton>
       </Container>
     );
   }
