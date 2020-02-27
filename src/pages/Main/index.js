@@ -1,11 +1,15 @@
 import React from 'react';
+import { Container, Title } from './styles';
 
 import Card from '../../components/Card';
 
 const Main = () => (
-  <div>
+  <Container>
+    <Title>
+      <h1>Tehen</h1>
+    </Title>
     <Card />
-  </div>
+  </Container>
 );
 
 export default Main;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import propTypes from 'prop-types';
+import { Container } from './styles';
 
 import api from '../../services/api';
 
@@ -21,10 +22,10 @@ class Post extends Component {
     const { post } = this.state;
 
     return (
-      <div>
+      <Container>
         <h1>{post.title}</h1>
         <p>{post.content}</p>
-      </div>
+      </Container>
     );
   }
 }
