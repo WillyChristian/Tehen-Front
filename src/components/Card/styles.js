@@ -29,11 +29,6 @@ export const PostCard = styled(Link)`
   }
 `;
 
-export const Info = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 export const Title = styled.div`
   margin-top: 10px;
   margin-left: 20px;
