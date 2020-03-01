@@ -3,6 +3,9 @@ import {
   Container,
   Section,
   PostCard,
+  Info,
+  Title,
+  Footer,
   ContainerButton,
   PrevButton,
   NextButton,
@@ -57,7 +60,17 @@ export default class Card extends Component {
         <Section>
           {posts.map((post) => (
             <PostCard key={post._id} to={`/posts/${post._id}`}>
-              <strong>{post.title}</strong>
+              <Info>
+                <Title>
+                  <strong>{post.title}</strong>
+                </Title>
+
+                <Footer>
+                  <p>
+                    por <strong>{post.author}</strong> há
+                  </p>
+                </Footer>
+              </Info>
             </PostCard>
           ))}
         </Section>

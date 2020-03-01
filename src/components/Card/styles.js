@@ -19,14 +19,34 @@ export const PostCard = styled(Link)`
   width: 230px;
   height: 220px;
   border-radius: 5px;
-  border: 1px solid black;
   background-color: white;
   color: black;
   text-decoration: none;
-  text-align: center;
+  transition-duration: 0.2s;
   &:hover {
     color: black;
     transform: translateY(-4px);
+  }
+`;
+
+export const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Title = styled.div`
+  margin-top: 10px;
+  margin-left: 20px;
+  strong {
+    font-size: 24px;
+  }
+`;
+
+export const Footer = styled.div`
+  margin-top: 25px;
+  margin-left: 20px;
+  strong {
+    font-size: 18px;
   }
 `;
 
