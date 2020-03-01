@@ -30,16 +30,14 @@ export const PostCard = styled(Link)`
 `;
 
 export const Title = styled.div`
-  margin-top: 10px;
-  margin-left: 20px;
+  margin: 10px 20px 0 20px;
   strong {
     font-size: 24px;
   }
 `;
 
 export const Footer = styled.div`
-  margin-top: 25px;
-  margin-left: 20px;
+  margin: 25px 20px 0 20px;
   strong {
     font-size: 18px;
   }
