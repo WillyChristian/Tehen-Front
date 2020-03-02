@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import propTypes from 'prop-types';
-import { Container, Title } from './styles';
+
+import { Container, BackLink, Title } from './styles';
+
+import leftArrow from '../../assets/leftArrow.png';
 
 import api from '../../services/api';
 
@@ -23,6 +26,10 @@ class Post extends Component {
 
     return (
       <Container>
+        <BackLink to="/">
+          <img src={leftArrow} alt="Back" />
+        </BackLink>
+
         <Title>
           <h1>{post.title}</h1>
         </Title>
