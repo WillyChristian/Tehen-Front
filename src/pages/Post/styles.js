@@ -2,10 +2,14 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin: 5%;
-  h1 {
+  p {
     color: white;
   }
-  p {
+`;
+
+export const Title = styled.div`
+  text-align: center;
+  h1 {
     color: white;
   }
 `;

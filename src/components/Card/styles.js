@@ -29,7 +29,7 @@ export const PostCard = styled(Link)`
   }
   &:active {
     transition-duration: 0.1s;
-    border: 1.5px solid black;
+    border: 0.5px solid black;
   }
 `;
 
@@ -64,10 +64,9 @@ export const PrevButton = styled.button`
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  transition-duration: 0.4s;
   &:active {
-    background-color: #ccc;
-    color: white;
+    transition-duration: 0.4s;
+    transform: translateY(4px);
   }
   &:disabled {
     opacity: 0.3;
@@ -85,10 +84,9 @@ export const NextButton = styled.button`
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  transition-duration: 0.4s;
   &:active {
-    background-color: #ccc;
-    color: white;
+    transition-duration: 0.1s;
+    transform: translateY(2px);
   }
   &:disabled {
     opacity: 0.3;

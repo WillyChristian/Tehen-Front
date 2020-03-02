@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import propTypes from 'prop-types';
-import { Container } from './styles';
+import { Container, Title } from './styles';
 
 import api from '../../services/api';
 
@@ -23,7 +23,9 @@ class Post extends Component {
 
     return (
       <Container>
-        <h1>{post.title}</h1>
+        <Title>
+          <h1>{post.title}</h1>
+        </Title>
         <p>{post.content}</p>
       </Container>
     );
