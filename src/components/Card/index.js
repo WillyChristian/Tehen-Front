@@ -65,7 +65,7 @@ export default class Card extends Component {
 
               <Footer>
                 <p>
-                  por <strong>{post.author}</strong> há
+                  por <strong>{post.author}</strong>
                 </p>
               </Footer>
             </PostCard>

@@ -22,10 +22,14 @@ export const PostCard = styled(Link)`
   background-color: white;
   color: black;
   text-decoration: none;
-  transition-duration: 0.2s;
   &:hover {
+    transition-duration: 0.3s;
     color: black;
     transform: translateY(-4px);
+  }
+  &:active {
+    transition-duration: 0.1s;
+    border: 1.5px solid black;
   }
 `;
 
