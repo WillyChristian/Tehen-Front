@@ -24,7 +24,7 @@ export default class Card extends Component {
   }
 
   loadPosts = async (page = 1) => {
-    await api.get(`/posts?page=1`).then((resp) => {
+    await api.get(`/posts?page=${page}`).then((resp) => {
       const { docs, totalPages } = resp.data;
 
       this.setState({ posts: docs, page, totalPages });
