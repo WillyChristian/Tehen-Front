@@ -1,6 +1,24 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import axios from 'axios';
 import { Form, User, Pass, BtnContainer } from './styleLogin';
+
+function sayHello() {
+  const user = document.querySelector('.user').value;
+  /*
+    'nathann.do.s.santos@gmail.com','102030'
+  */
+  const pass = document.querySelector('.pass').value;
+  axios({
+    method: 'POST',
+    url: 'https://tehen-app.herokuapp.com/sessions',
+    data: {
+      email: user,
+      password: pass,
+    },
+  }).then((resp) => {
+    console.log(resp.data);
+  });
+}
 
 export default function indexLogin() {
   return (
@@ -13,7 +31,9 @@ export default function indexLogin() {
         <input className="pass" type="password" placeholder="Senha" />
       </Pass>
       <BtnContainer>
-        <button type="button">Login</button>
+        <button type="button" onClick={() => sayHello()}>
+          Login
+        </button>
       </BtnContainer>
     </Form>
   );
