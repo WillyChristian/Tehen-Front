@@ -8,6 +8,7 @@ export const Nav = Styled.nav`
     color: #fff;
     justify-content: space-between;
     align-items: center;
+    padding: 2px 55px;
     & ul{
         display: block;
     }

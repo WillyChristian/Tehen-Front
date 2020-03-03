@@ -1,19 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Nav } from './styled';
+import { Nav } from './styleNavbar';
 
 export default function NavIndex() {
   return (
     <Nav>
-      <ul className="nav">
-        <li>
-          <Link to="/" clasName="nav-link">
-            Primeiro link
-          </Link>
-        </li>
-      </ul>
       <div className="nav-brand">
-        <Link to="/home">TEHEND</Link>
+        <Link to="/">TEHEND</Link>
       </div>
       <ul>
         <li>
@@ -22,13 +15,13 @@ export default function NavIndex() {
           </Link>
         </li>
         <li>
-          <Link to="/" className="side-link">
-            Link 2
+          <Link to="/posts" className="side-link">
+            Posts
           </Link>
         </li>
         <li>
-          <Link to="/" className="side-link">
-            Link 3
+          <Link to="/about" className="side-link">
+            Sobre nós
           </Link>
         </li>
       </ul>

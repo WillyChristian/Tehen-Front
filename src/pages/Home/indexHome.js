@@ -1,10 +1,10 @@
 import React from 'react';
-import './styleHome';
+import { Style } from './styleHome';
 
 export default function indexHome() {
   return (
-    <div>
+    <Style>
       <h1>Aqui é a home!</h1>
-    </div>
+    </Style>
   );
 }
