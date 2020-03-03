@@ -15,9 +15,19 @@ function sayHello() {
       email: user,
       password: pass,
     },
-  }).then((resp) => {
-    console.log(resp.data);
-  });
+  })
+    .then((resp) => {
+      const userID = resp.data.user._id;
+      const { token } = resp.data;
+
+      sessionStorage.setItem('token', token);
+      sessionStorage.setItem('id', userID);
+    })
+    .then(() => {
+      const id = sessionStorage.getItem('id');
+      window.open(`http://localhost:3000/${id}/home`, '_self');
+    })
+    .catch((err) => `Erro: ${err}`);
 }
 
 export default function indexLogin() {
