@@ -12,7 +12,9 @@ export default function NavIndex() {
           </Link>
         </li>
       </ul>
-      <div className="nav-brand">TEHEND</div>
+      <div className="nav-brand">
+        <Link to="/home">TEHEND</Link>
+      </div>
       <ul>
         <li>
           <Link to="/login" className="side-link">

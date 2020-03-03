@@ -1,12 +1,63 @@
 import Styled from 'styled-components';
 
-export const Button = Styled.div`
-    color: #ddd;
-    font-size: 2rem;
-    font-weigth: bold;
-    
-    .btn-link{
-        text-decoration:none;
-        color: #ddd;
-    }
-`;
+// small {
+// 	color: #000;
+// 	font-size: x-small;
+// 	float: left;
+// }
+/* #2F4F63 -- 4A778C */
+export const Form = Styled.form`
+	width: 460px;
+	height: 530px;
+	background-image: linear-gradient(#4A778C 5%,#2F4F63 30%,#282c34 98%);
+	padding: 80px 40px;
+	border-radius: 10px;
+	position: absolute;
+	top: 340px;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+}`;
+
+/* .login-form h1{
+	color: #f1f1f1;
+	text-align: center;
+	margin-bottom: 120px;
+} */
+
+/** ***********************  STYLING FORM ************************ */
+/* .text-user{
+	border-bottom: 2px solid #adadad;
+	position: relative;
+	margin: 30px;
+}
+
+.text-user input{
+	font-size: 20px;
+	color: #f1f1f1;
+	border: none;
+	width: 100%;
+	background: none;
+	padding: 0 5px ;
+	height: 40px;
+	outline: none;
+}
+.text-pass{
+	border-bottom: 2px solid #adadad;
+	position: relative;
+	margin: 30px;
+}
+
+.text-pass input{
+	font-size: 20px;
+	color: #f1f1f1;
+	border: none;
+	width: 100%;
+	background: none;
+	padding: 0 5px ;
+	height: 40px;
+	outline: none;
+}
+.button-container{
+	margin-bottom: 50px;
+} */
